@@ -1,0 +1,9 @@
+<resources>
+	<string name="app_name">Walk to Stop Alarm</string>
+	<string name="steps_required">Steps required</string>
+	<string name="schedule">Schedule</string>
+	<string name="stop_alarm">Stop</string>
+	<string name="progress_fmt">%1$d / %2$d steps</string>
+	<string name="choose_sound">Choose sound</string>
+	<string name="selected_sound">Not selected</string>
+</resources>

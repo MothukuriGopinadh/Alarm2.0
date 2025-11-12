@@ -1,0 +1,35 @@
+:root{--bg:#f7f8fb;--card:#fff;--accent:#0b63d6;--muted:#666}
+*{box-sizing:border-box;font-family:Segoe UI,Roboto,Arial,sans-serif}
+body{margin:0;background:var(--bg);color:#111}
+.container{max-width:520px;margin:48px auto;padding:20px;background:var(--card);border-radius:8px;box-shadow:0 6px 20px rgba(11,99,214,0.06)}
+h1{font-size:18px;margin:0 0 16px}
+h2{font-size:14px;margin:16px 0 12px;color:var(--muted)}
+.field{display:block;margin-bottom:16px}
+.field span{display:block;margin-bottom:6px;color:var(--muted)}
+input[type=time],input[type=number]{width:100%;padding:10px;border:1px solid #e2e6ee;border-radius:6px}
+.row{display:flex;gap:12px;align-items:center;margin-bottom:18px}
+.stepsLabel{flex:1;color:var(--muted)}
+.stepsInput{width:80px}
+.primary{width:100%;padding:12px;background:var(--accent);color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer}
+.primary:active{transform:translateY(1px)}
+.result{margin-top:16px;color:#0a4a10;font-weight:600}
+.soundRow{display:flex;gap:8px;align-items:center;margin-top:14px}
+.soundRow input[type=file]{display:none}
+.secondary{padding:8px 12px;border-radius:8px;border:1px solid #d6dbe6;background:#fff;cursor:pointer}
+.tertiary{padding:8px 12px;border-radius:8px;border:1px solid transparent;background:#eef6ff;color:var(--accent);cursor:pointer}
+.muted{color:var(--muted);margin-left:8px}
+.simRow{display:flex;gap:12px;align-items:center;margin-top:10px}
+.alarmsSection{margin-top:20px;padding-top:16px;border-top:1px solid #e2e6ee}
+.alarmsList{display:flex;flex-direction:column;gap:10px}
+.alarm-item{display:flex;justify-content:space-between;align-items:center;padding:12px;background:#f7f8fb;border-radius:8px;border:1px solid #e2e6ee}
+.alarm-info{flex:1}
+.alarm-info strong{display:block;margin-bottom:4px}
+.alarm-progress{display:block;font-size:12px;color:var(--muted)}
+.alarm-controls{display:flex;gap:6px}
+.alarm-controls button{padding:6px 10px;font-size:12px}
+@media (max-width:480px){.container{margin:20px;padding:16px}.alarm-item{flex-direction:column;align-items:flex-start}.alarm-controls{width:100%;gap:4px}.alarm-controls button{flex:1;font-size:11px}}
+/* Camera section styles */
+.cameraSection{margin-top:18px;padding-top:12px;border-top:1px solid #e2e6ee}
+.cameraControls{display:flex;gap:8px;align-items:center}
+#cameraVideo{width:100%;border-radius:8px;margin-top:8px}
+#snapshot{width:100%;border-radius:8px;margin-top:8px}

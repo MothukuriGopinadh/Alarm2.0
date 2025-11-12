@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WalkToStopAlarm — Web Preview</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>WalkToStopAlarm (Preview)</h1>
+
+    <label class="field">
+      <span>Pick time</span>
+      <input id="timePicker" type="time" />
+    </label>
+
+    <div class="row">
+      <label class="stepsLabel">Steps required</label>
+      <input id="stepsInput" type="number" min="1" value="20" class="stepsInput" />
+    </div>
+
+    <div class="soundRow">
+      <input id="soundFile" type="file" accept="audio/*" />
+      <button id="chooseBtn" class="secondary">Choose sound</button>
+      <span id="selectedSound" class="muted">No sound selected</span>
+    </div>
+
+    <button id="setAlarmBtn" class="primary">Set Alarm</button>
+
+    <div class="alarmsSection">
+      <h2>Active Alarms</h2>
+      <div id="alarmsList" class="alarmsList"></div>
+    </div>
+
+    <div id="result" class="result" aria-live="polite"></div>
+    <div class="cameraSection">
+      <h2>Camera</h2>
+      <div class="cameraControls">
+        <button id="openCameraBtn" class="secondary">Open Camera</button>
+        <button id="captureBtn" class="secondary" disabled>Capture</button>
+        <button id="closeCameraBtn" class="secondary" disabled>Close Camera</button>
+      </div>
+      <video id="cameraVideo" autoplay playsinline style="display:none; width:100%; max-height:240px; border-radius:8px; margin-top:8px;"></video>
+      <canvas id="cameraCanvas" style="display:none;"></canvas>
+      <img id="snapshot" alt="Snapshot" style="display:none; width:100%; margin-top:8px; border-radius:8px;" />
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.mahi.stepalarm"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+11-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:108-179
+11-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:125-177
+12    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+12-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:179-250
+12-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:196-248
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:250-312
+13-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:267-310
+14    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+14-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:312-385
+14-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:329-383
+15
+16    <permission
+16-->[androidx.core:core:1.13.1] C:\Users\mothu\.gradle\caches\transforms-3\5a84d68fd1c203be3ba70db84af28403\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+17        android:name="com.mahi.stepalarm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+17-->[androidx.core:core:1.13.1] C:\Users\mothu\.gradle\caches\transforms-3\5a84d68fd1c203be3ba70db84af28403\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+18        android:protectionLevel="signature" />
+18-->[androidx.core:core:1.13.1] C:\Users\mothu\.gradle\caches\transforms-3\5a84d68fd1c203be3ba70db84af28403\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+19
+20    <uses-permission android:name="com.mahi.stepalarm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+20-->[androidx.core:core:1.13.1] C:\Users\mothu\.gradle\caches\transforms-3\5a84d68fd1c203be3ba70db84af28403\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+20-->[androidx.core:core:1.13.1] C:\Users\mothu\.gradle\caches\transforms-3\5a84d68fd1c203be3ba70db84af28403\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+21
+22    <application
+22-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:385-1019
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.13.1] C:\Users\mothu\.gradle\caches\transforms-3\5a84d68fd1c203be3ba70db84af28403\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+24        android:debuggable="true"
+25        android:extractNativeLibs="false"
+26        android:label="@string/app_name"
+26-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:398-430
+27        android:theme="@style/Theme.Material3.DayNight.NoActionBar" >
+27-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:431-490
+28        <activity
+28-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:491-615
+29            android:name="com.mahi.stepalarm.AlarmActivity"
+29-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:501-530
+30            android:exported="false"
+30-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:531-555
+31            android:showWhenLocked="true"
+31-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:556-585
+32            android:turnScreenOn="true" />
+32-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:586-613
+33        <activity
+33-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:615-830
+34            android:name="com.mahi.stepalarm.MainActivity"
+34-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:625-653
+35            android:exported="true" >
+35-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:654-677
+36            <intent-filter>
+36-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:678-819
+37                <action android:name="android.intent.action.MAIN" />
+37-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:693-744
+37-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:701-742
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:744-803
+39-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:754-801
+40            </intent-filter>
+41        </activity>
+42
+43        <service
+43-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:830-940
+44            android:name="com.mahi.stepalarm.AlarmService"
+44-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:839-867
+45            android:exported="false"
+45-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:868-892
+46            android:foregroundServiceType="mediaPlayback" />
+46-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:893-938
+47
+48        <receiver
+48-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:940-1005
+49            android:name="com.mahi.stepalarm.AlarmReceiver"
+49-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:950-979
+50            android:exported="true" />
+50-->C:\Users\mothu\OneDrive\Documents\WalkToStopAlarm_APK_project[1]\WalkToStopAlarm\app\src\main\AndroidManifest.xml:1:980-1003
+51
+52        <provider
+52-->[androidx.emoji2:emoji2:1.3.0] C:\Users\mothu\.gradle\caches\transforms-3\953c953862d85ab099da6c47f659904f\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+53            android:name="androidx.startup.InitializationProvider"
+53-->[androidx.emoji2:emoji2:1.3.0] C:\Users\mothu\.gradle\caches\transforms-3\953c953862d85ab099da6c47f659904f\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
+54            android:authorities="com.mahi.stepalarm.androidx-startup"
+54-->[androidx.emoji2:emoji2:1.3.0] C:\Users\mothu\.gradle\caches\transforms-3\953c953862d85ab099da6c47f659904f\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
+55            android:exported="false" >
+55-->[androidx.emoji2:emoji2:1.3.0] C:\Users\mothu\.gradle\caches\transforms-3\953c953862d85ab099da6c47f659904f\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
+56            <meta-data
+56-->[androidx.emoji2:emoji2:1.3.0] C:\Users\mothu\.gradle\caches\transforms-3\953c953862d85ab099da6c47f659904f\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+57                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+57-->[androidx.emoji2:emoji2:1.3.0] C:\Users\mothu\.gradle\caches\transforms-3\953c953862d85ab099da6c47f659904f\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
+58                android:value="androidx.startup" />
+58-->[androidx.emoji2:emoji2:1.3.0] C:\Users\mothu\.gradle\caches\transforms-3\953c953862d85ab099da6c47f659904f\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
+59            <meta-data
+59-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\mothu\.gradle\caches\transforms-3\4b2e9bd0e4b78873d7f203aa0a74b0ba\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+60                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+60-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\mothu\.gradle\caches\transforms-3\4b2e9bd0e4b78873d7f203aa0a74b0ba\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+61                android:value="androidx.startup" />
+61-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\mothu\.gradle\caches\transforms-3\4b2e9bd0e4b78873d7f203aa0a74b0ba\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+62            <meta-data
+62-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\mothu\.gradle\caches\transforms-3\8336aabdb62e3ec3143122181e6531f1\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+63                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+63-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\mothu\.gradle\caches\transforms-3\8336aabdb62e3ec3143122181e6531f1\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+64                android:value="androidx.startup" />
+64-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\mothu\.gradle\caches\transforms-3\8336aabdb62e3ec3143122181e6531f1\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+65        </provider>
+66
+67        <receiver
+67-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\mothu\.gradle\caches\transforms-3\8336aabdb62e3ec3143122181e6531f1\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+68            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+68-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\mothu\.gradle\caches\transforms-3\8336aabdb62e3ec3143122181e6531f1\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+69            android:directBootAware="false"
+69-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\mothu\.gradle\caches\transforms-3\8336aabdb62e3ec3143122181e6531f1\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+70            android:enabled="true"
+70-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\mothu\.gradle\caches\transforms-3\8336aabdb62e3ec3143122181e6531f1\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+71            android:exported="true"
+71-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\mothu\.gradle\caches\transforms-3\8336aabdb62e3ec3143122181e6531f1\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+72            android:permission="android.permission.DUMP" >
+72-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\mothu\.gradle\caches\transforms-3\8336aabdb62e3ec3143122181e6531f1\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+73            <intent-filter>
+73-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\mothu\.gradle\caches\transforms-3\8336aabdb62e3ec3143122181e6531f1\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+74                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\mothu\.gradle\caches\transforms-3\8336aabdb62e3ec3143122181e6531f1\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\mothu\.gradle\caches\transforms-3\8336aabdb62e3ec3143122181e6531f1\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+75            </intent-filter>
+76            <intent-filter>
+76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\mothu\.gradle\caches\transforms-3\8336aabdb62e3ec3143122181e6531f1\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+77                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\mothu\.gradle\caches\transforms-3\8336aabdb62e3ec3143122181e6531f1\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\mothu\.gradle\caches\transforms-3\8336aabdb62e3ec3143122181e6531f1\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+78            </intent-filter>
+79            <intent-filter>
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\mothu\.gradle\caches\transforms-3\8336aabdb62e3ec3143122181e6531f1\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+80                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\mothu\.gradle\caches\transforms-3\8336aabdb62e3ec3143122181e6531f1\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\mothu\.gradle\caches\transforms-3\8336aabdb62e3ec3143122181e6531f1\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+81            </intent-filter>
+82            <intent-filter>
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\mothu\.gradle\caches\transforms-3\8336aabdb62e3ec3143122181e6531f1\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+83                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\mothu\.gradle\caches\transforms-3\8336aabdb62e3ec3143122181e6531f1\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\mothu\.gradle\caches\transforms-3\8336aabdb62e3ec3143122181e6531f1\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+84            </intent-filter>
+85        </receiver>
+86    </application>
+87
+88</manifest>

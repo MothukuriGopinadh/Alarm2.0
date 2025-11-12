@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WalkToStopAlarm</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <div class="app-header">
+      <h1>WalkToStopAlarm (Preview)</h1>
+    </div>
+
+    <main class="app-content">
+      <!-- Pick Time Section -->
+      <div class="form-section">
+        <label class="field-label">Pick time</label>
+        <input id="timePicker" type="time" class="time-input" />
+      </div>
+
+      <!-- Steps Required Section -->
+      <div class="form-section">
+        <label class="field-label">Steps required</label>
+        <input id="stepsInput" type="number" min="1" value="20" class="steps-input" />
+      </div>
+
+      <!-- Choose Sound Section -->
+      <div class="form-section">
+        <input id="soundFile" type="file" accept="audio/*" style="display:none;" />
+        <button id="chooseBtn" class="btn-secondary">Choose sound</button>
+        <span id="selectedSound" class="sound-status">No sound selected</span>
+      </div>
+
+      <!-- Enable Audio Button -->
+      <button id="enableAudioBtn" class="btn-secondary full-width" style="margin-bottom: 12px;">Enable Alarm Sound</button>
+
+      <!-- Set Alarm Button -->
+      <button id="setAlarmBtn" class="btn-primary full-width">Set Alarm</button>
+
+      <!-- Result Message -->
+      <div id="result" class="result-message" aria-live="polite"></div>
+
+      <!-- Steps Counter Section -->
+      <section class="section">
+        <h2>Step Counter</h2>
+        <div class="steps-counter">
+          <div class="counter-display">
+            <div class="counter-number" id="stepCounter">0</div>
+            <div class="counter-label">Steps today</div>
+          </div>
+        </div>
+        <div id="stepCountStatus" class="step-status"></div>
+      </section>
+
+      <!-- Active Alarms Section -->
+      <section class="section">
+        <h2>Active Alarms</h2>
+        <div id="alarmsList" class="alarms-list"></div>
+      </section>
+
+      <!-- Camera Section -->
+      <section class="section">
+        <h2>Camera</h2>
+        <div class="camera-controls">
+          <button id="openCameraBtn" class="btn-secondary">Open Camera</button>
+          <button id="captureBtn" class="btn-secondary" disabled>Capture</button>
+          <button id="closeCameraBtn" class="btn-secondary" disabled>Close Camera</button>
+        </div>
+        <video id="cameraVideo" autoplay playsinline style="display:none; width:100%; max-height:360px; border-radius:8px; margin-top:8px;"></video>
+        <canvas id="cameraCanvas" style="display:none;"></canvas>
+        <img id="snapshot" alt="Snapshot" style="display:none; width:100%; margin-top:8px; border-radius:8px;" />
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
