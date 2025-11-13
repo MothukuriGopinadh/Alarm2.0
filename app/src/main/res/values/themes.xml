@@ -1,1 +1,9 @@
-<resources><style name="Theme.Material3.DayNight.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar"/></resources>
+<resources>
+    <style name="Base.Theme.Material3.DayNight.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+    <style name="Theme.Material3.DayNight.NoActionBar" parent="Base.Theme.Material3.DayNight.NoActionBar" />
+</resources>

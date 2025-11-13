@@ -13,7 +13,10 @@ android {
     versionCode = 1
     versionName = "1.0"
   }
-  buildFeatures { viewBinding = true }
+  buildFeatures { 
+    viewBinding = false
+    dataBinding = false
+  }
   compileOptions {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
