@@ -1,0 +1,3 @@
+# Ensure gradle wrapper uses LF on checkout (prevents Linux runner problems)
+gradlew text eol=lf
+gradle/wrapper/gradle-wrapper.properties text eol=lf
