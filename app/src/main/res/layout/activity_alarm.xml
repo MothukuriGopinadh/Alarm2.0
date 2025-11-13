@@ -1,1 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center" android:padding="24dp"><TextView android:id="@+id/statusText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Walk to stop the alarm" android:textSize="20sp"/><TextView android:id="@+id/progressText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 / 20 steps" android:textSize="18sp" android:layout_marginTop="8dp"/><Button android:id="@+id/stopBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/stop_alarm" android:layout_marginTop="18dp"/></LinearLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:gravity="center"
+	android:padding="24dp">
+
+	<TextView
+		android:id="@+id/statusText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Walk to stop the alarm"
+		android:textSize="20sp" />
+
+	<TextView
+		android:id="@+id/progressText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="0 / 20 steps"
+		android:textSize="18sp"
+		android:layout_marginTop="8dp" />
+
+	<Button
+		android:id="@+id/stopBtn"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/stop_alarm"
+		android:layout_marginTop="18dp" />
+
+</LinearLayout>
