@@ -8,19 +8,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: "17"
+          java-version: "11"
+      
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
-      - name: Gradle build
-        uses: gradle/gradle-build-action@v3
-        with:
-          arguments: assembleDebug --stacktrace
+      
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+      
+      - name: Build APK
+        run: ./gradlew assembleDebug --stacktrace
+      
       - name: Upload APK
         uses: actions/upload-artifact@v4
+        if: success()
         with:
           name: WalkToStopAlarm-debug-apk
           path: app/build/outputs/apk/debug/*.apk
